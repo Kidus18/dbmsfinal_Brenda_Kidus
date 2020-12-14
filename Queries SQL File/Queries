@@ -1,0 +1,16 @@
+SELECT zone_id, COUNT(*) FROM zones
+GROUP BY zone_id;
+
+
+
+SELECT sector_id, COUNT(*) FROM sector
+GROUP BY sector_id;
+
+
+
+
+
+
+
+SELECT staff_id, COUNT(*) FROM staff
+GROUP BY sector_id;
