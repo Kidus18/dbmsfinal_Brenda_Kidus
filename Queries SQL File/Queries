@@ -8,9 +8,47 @@ GROUP BY sector_id;
 
 
 
-
+SELECT plant_id, COUNT(*) FROM zone
+GROUP BY zone_id;
 
 
 
 SELECT staff_id, COUNT(*) FROM staff
+GROUP BY sector_id;
+
+
+
+SELECT premise_id, COUNT(*) FROM premise
+GROUP BY zone_id;
+
+
+
+SELECT route_id, COUNT(*) FROM zone
+GROUP BY zone_id;
+
+
+
+SELECT plant_capacity, COUNT(*) FROM plant
+GROUP BY plant_id;
+
+
+
+SELECT sector_capacity, COUNT(*) FROM sector
+GROUP BY sector_id;
+
+
+
+SELECT plant_id, COUNT(*) FROM sector
+GROUP BY sector_id;
+
+
+
+
+
+
+SELECT premise_id, COUNT(*) FROM premise
+GROUP BY zone_id;
+
+
+SELECT route_id, COUNT(*) FROM sector
 GROUP BY sector_id;
